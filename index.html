@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Survey Form</title>
+        <link rel='stylesheet' href='style.css'>
+    </head>
+    <body>
+        <main>
+            <header>
+                <div id='title'>
+                    <h1>Anime Survey Form</h1>
+                </div>
+                <div id='description'>
+                    <p>Your favorite anime this season!</p>
+                </div>
+            </header>
+            <section id='form-section'>
+                <form id='survey-form' action='#'>
+                    <div class='form-item'>
+                        <label for="name" id='name-label'>Name</label>
+                        <input type='text' id='name' placeholder="Enter your name..." required>
+                    </div>
+                    <div class='form-item'>
+                        <label for='email' id='email-label'>Email</label>
+                        <input type='email' id='email' placeholder="Enter your email..." required>
+                    </div>
+                    <div class='form-item'>
+                        <label for='number' id='number-label'>Number of Anime Watched This Season</label>
+                        <input type='number' id='number' min=1 max=20 placeholder="Enter the number of anime you've watched..." required>
+                    </div>
+                    <div class='form-item'>
+                        <label for='dropdown' id="dropdown-label">What Level are You</label>
+                        <select id='dropdown'>
+                            <option value='beginner'>Beginner</option>
+                            <option value='seasonal' selected>Seasonal</option>
+                            <option value='oldschool'>Old School</option>
+                            <option value='veteran'>Veteran</option>
+                        </select>
+                    </div>
+                    <div class='form-item'>
+                        <label id='radio-question-label'>Do you love anime?</label>
+                        <label class='radio'>
+                            <input type='radio' name="animelove" id='love' checked>Yes
+                        </label>
+                        <label class='radio'>
+                            <input type='radio' name='animelove' id='love'>No
+                        </label>
+                        
+                    </div>
+                    <div class='form-item' id='checklist'>
+                        <p>What anime do you like?</p>
+                        <label for='chkds'>
+                            <input id='chkds' type='checkbox' value='demonslayer'>Demon Slayer
+                        </label>
+                        <label for='chkop'>
+                                <input id='chkop' type='checkbox' value='onepiece'>One Piece
+                        </label>
+                        <label for='chkn'>
+                                <input id='chkn' type='checkbox' value='Naruto'>Naruto
+                        </label>
+                        <label for='chkfw'>
+                                <input id='chkfw' type='checkbox' value='foodwars'>Food Wars
+                        </label>
+                    </div>
+                    <div class='form-item' id='suggestion'>
+                        <p>Please enter your suggestions (if any)</p>
+                        <textarea name='suggestions' rows='5' placeholder="Enter your suggestions..."></textarea>
+                    </div>
+                    <div id='submit-btn'>
+                        <label for='submit'>
+                            <button type='submit' id='submit'>SUBMIT</button>
+                        </label>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </body>
+</html>
